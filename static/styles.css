@@ -1,0 +1,71 @@
+/*Cores*/
+:root{
+  --darkblue: #008B8B;
+  --goldenrod: #DAA520;
+  --dark-green: #2F4F4F;
+}
+h1{
+  font-family: "fantasy";
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--goldenrod)
+}
+html, body{
+  background-image: url("image1.png");
+  height: 99%;
+  padding: 0;
+  margin: 0;
+}
+.Grid1{
+  display: grid;
+  grid-template-rows: 10% 20% 70%;
+  height: 100%;
+  /*text-align: center;*/
+  background-color: #AFEEEE;
+  border: solid 5px	var(--dark-green);
+  border-radius: 10px;
+}
+.Navegar{
+  display: grid;
+  grid-template-columns: 18% 80%;
+  background-color: var(--darkblue);
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: double 5px var(--dark-green);
+  padding-left: 2%;
+  text-align: right;
+  align-items: center;
+}
+.Opcoes{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  text-align: center;
+}
+.Opcoes div{
+  border: double 5px #5F9EA0;
+}
+.equip{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  align-items: center;
+}
+.inventory{
+  display: grid;
+  grid-template-columns: 70%;
+  border: double 5px var(--dark-green);
+  border-radius: 10px;
+}
+.Lista{
+  list-style: none;
+}
+.Button{
+  border-radius: 10px 0px;
+  width: 28%;
+  height: 80%;
+  margin: 10px 10px;
+  background: #20B2AA;
+  font-family: serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #556b2f;
+}
