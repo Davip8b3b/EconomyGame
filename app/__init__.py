@@ -9,7 +9,6 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 #rodar a página home 
-app = Flask(__name__)
 @app.route("/")
 def index():
   coin = 320;
