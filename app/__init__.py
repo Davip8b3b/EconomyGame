@@ -7,10 +7,5 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///storage.db'
 
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
-
-#rodar a página home 
-@app.route("/")
-def index():
-  coin = 320;
-  return render_template("home.html", coin = coin)
   
+from app.controllers import default
