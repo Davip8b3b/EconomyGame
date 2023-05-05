@@ -2,7 +2,7 @@ from flask import render_template
 from app import app
 
 #rodar a página home 
-@app.route("home")
+@app.route("/home")
 @app.route("/")
 def index():
   coin = 320;
